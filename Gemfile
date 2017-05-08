@@ -1,5 +1,7 @@
 source 'http://rubygems.org'
 
+# Automate building out the Golden Seven (RESTful architecture)
+gem "starter_generators", :github => "raghubetina/starter_generators"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.0.2'
