@@ -9,4 +9,8 @@ class Actor < ApplicationRecord
 
  # - image_url: no rules
 
+ # Create a new method to simplify lookup
+ has_many(:characters, :class_name => "Character", :foreign_key => "actor_id")
+ has_many(:movies, :class_name => "Movie", :foreign_key => "actor_id", :through => :characters)
+
 end

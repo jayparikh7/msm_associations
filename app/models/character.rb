@@ -9,7 +9,9 @@ class Character < ApplicationRecord
 
   #  - name: no rules
 
-  # Create a new method to simplify lookup 
+  # Create a new method to simplify lookup
+  # Find actor record based on character id (one to many relationship)
   belongs_to(:actor, :class_name => "Actor", :foreign_key => "actor_id")
+  belongs_to(:movie, :class_name => "Movie", :foreign_key => "movie_id")
 
 end
